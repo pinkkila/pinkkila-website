@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="h-320 -translate-y-87.5 absolute left-0 xl:left-1/8 top-0 w-60 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
         </div>
         <section>
-          <div className="relative pt-36 md:pt-48">
+          <div className="relative pt-36 md:pt-48 xl:pt-69">
             <div
               aria-hidden
               className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"
