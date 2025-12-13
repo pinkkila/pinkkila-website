@@ -9,7 +9,7 @@ import reactNative from "@/assets/react-native.png";
 
 export default function Projects() {
   return (
-    <main>
+    <main className="pt-10">
       <Project
         title="Webstore Platform Project"
         description={
@@ -19,7 +19,8 @@ export default function Projects() {
               <Highlight>Backend for Frontend (BFF)</Highlight> architecture. It
               uses multiple <Highlight>Spring Boot</Highlight> services, and
               authentication and authorization are handled via
-              <Highlight> OAuth2 and OpenID Connect</Highlight>.
+              <Highlight> OAuth2</Highlight> and{" "}
+              <Highlight>OpenID Connect</Highlight>.
             </p>
             <p className="text-muted-foreground">
               The frontend is implemented with <Highlight>Next.js</Highlight>,
@@ -32,6 +33,20 @@ export default function Projects() {
             </p>
           </>
         }
+        stack={[
+          "Java",
+          "Spring Boot",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "shadcn/ui",
+          "TanStack Query",
+          "OAuth2",
+          "OpenID Connect",
+          "REST API",
+          "PostgreSQL",
+        ]}
         imageUrl={pinkkstore}
         githubLink="https://github.com/pinkkila/pinkkstore"
       />
@@ -51,13 +66,26 @@ export default function Projects() {
             <p className="text-muted-foreground">
               The frontend is a dashboard build with{" "}
               <Highlight>React</Highlight> and styled with{" "}
-              <Highlight>Tailwind CSS</Highlight>
+              <Highlight>Tailwind CSS </Highlight>
               and <Highlight>shadcn/ui</Highlight>. Data fetching is handled
               with <Highlight>TanStack Query</Highlight>, providing efficient
               caching as well as built-in loading and error handling.
             </p>
           </>
         }
+        stack={[
+          "Java",
+          "Spring Boot",
+          "TypeScript",
+          "React",
+          "Vite",
+          "Tailwind CSS",
+          "shadcn/ui",
+          "TanStack Query",
+          "REST API",
+          "PostgreSQL",
+          "Testing",
+        ]}
         imageUrl={restDashboard}
         githubLink="https://github.com/pinkkila/dev-academy-spring-2025-exercise"
       />
@@ -85,6 +113,15 @@ export default function Projects() {
             </p>
           </>
         }
+        stack={[
+          "AWS",
+          "GitHub Actions",
+          "CI/CD",
+          "Docker",
+          "OpenID Connect",
+          "Spring Boot",
+          "PostgreSQL",
+        ]}
         imageUrl={awsDiagram}
         githubLink="https://github.com/pinkkila/stories"
       />
@@ -105,6 +142,7 @@ export default function Projects() {
             </p>
           </>
         }
+        stack={["Linux", "Salt", "Vagrant", "IaC"]}
         imageUrl={palvelintenHallinta}
         githubLink="https://github.com/pinkkila/palvelinten-hallinta"
       />
@@ -133,6 +171,20 @@ export default function Projects() {
             </p>
           </>
         }
+        stack={[
+          "Kali Linux",
+          "Penetration Testing",
+          "nmap",
+          "masscan",
+          "ffuf",
+          "OWASP ZAP",
+          "mitmproxy",
+          "msfvenom",
+          "Metasploit",
+          "Hashcat",
+          "John the Ripper",
+          "pencode"
+        ]}
         imageUrl={tuntkeutumisTestaus}
         githubLink="https://github.com/pinkkila/tunkeutumistestaus"
       />
@@ -152,6 +204,14 @@ export default function Projects() {
             </p>
           </>
         }
+        stack={[
+          "TypeScript",
+          "React Native",
+          "CSS",
+          "Expo",
+          "SQLite",
+          "OpenAI API",
+        ]}
         imageUrl={reactNative}
         githubLink="https://github.com/pinkkila/tunkeutumistestaus"
       />
