@@ -26,7 +26,7 @@ export default function Project({ title, description, imageUrl, githubLink }: Pr
                     target="_blank"
                     href={githubLink}
                     rel="noopener noreferrer"
-                    className="text-foreground font-bold hover:underline"
+                    className="text-foreground font-bold hover:underline hover:text-accent-foreground"
                   >
                     <img
                       src={githubLogo}

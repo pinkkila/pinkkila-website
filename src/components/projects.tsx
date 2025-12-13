@@ -1,10 +1,11 @@
+import React from "react";
 import Project from "@/components/project.tsx";
 import pinkkstore from "@/assets/pinkkstore-front-page.png";
 import restDashboard from "@/assets/rest-dashboard.png";
 import awsDiagram from "@/assets/aws-diagram.png";
 import palvelintenHallinta from "@/assets/palvelinten-hallinta.png";
 import tuntkeutumisTestaus from "@/assets/tunkeutumis-testaus.png";
-import reactNative from "@/assets/react-native.png";
+import reactNative from "@/assets/react-native.png"
 
 export default function Projects() {
   return (
@@ -15,25 +16,18 @@ export default function Projects() {
           <>
             <p className="text-muted-foreground">
               Full-stack web app with{" "}
-              <span className="text-foreground font-bold">
-                Backend for Frontend
-              </span>{" "}
-              architecture. It uses multiple{" "}
-              <span className="text-foreground font-bold">Spring Boot</span>{" "}
-              services, and authentication and authorization are handled via
-              <span className="text-foreground font-bold">
-                OAuth2 and OpenID Connect
-              </span>
-              .
+              <Highlight>Backend for Frontend (BFF)</Highlight> architecture. It
+              uses multiple <Highlight>Spring Boot</Highlight> services, and
+              authentication and authorization are handled via
+              <Highlight> OAuth2 and OpenID Connect</Highlight>.
             </p>
             <p className="text-muted-foreground">
-              The frontend is implemented with{" "}
-              <span className="text-foreground font-bold">Next.js</span>,
+              The frontend is implemented with <Highlight>Next.js</Highlight>,
               combining server and client components, and styled using{" "}
-              <span className="text-foreground font-bold">shadcn/ui</span> and{" "}
-              <span className="text-foreground font-bold">Tailwind CSS</span>.
-              Data fetching is handled through a mix of server components and
-              <span className="text-foreground font-bold">TanStack Query </span>
+              <Highlight>shadcn/ui</Highlight> and{" "}
+              <Highlight>Tailwind CSS</Highlight>. Data fetching is handled
+              through a mix of server components and
+              <Highlight> TanStack Query </Highlight>
               for caching, prefetching, loading states and error handling.
             </p>
           </>
@@ -47,17 +41,20 @@ export default function Projects() {
         description={
           <>
             <p className="text-muted-foreground">
-              The backend is a REST API built with Spring Boot, supporting
-              sorting, pagination, and filtering through query parameters. The
-              project includes comprehensive testing examples, such as unit
-              tests, JSON serialization tests, controller tests, JDBC tests, and
-              full integration/end-to-end tests.
+              The backend is a <Highlight>REST API</Highlight> built with{" "}
+              <Highlight>Spring Boot</Highlight>, supporting sorting,
+              pagination, and filtering through query parameters. The project
+              includes comprehensive <Highlight>testing</Highlight> examples,
+              such as unit tests, JSON serialization tests, controller tests,
+              JDBC tests, and full integration/end-to-end tests.
             </p>
             <p className="text-muted-foreground">
-              The frontend is a React-based dashboard styled with Tailwind CSS
-              and shadcn/ui. Data fetching is handled with TanStack Query,
-              providing efficient caching as well as built-in loading and error
-              handling.
+              The frontend is a dashboard build with{" "}
+              <Highlight>React</Highlight> and styled with{" "}
+              <Highlight>Tailwind CSS</Highlight>
+              and <Highlight>shadcn/ui</Highlight>. Data fetching is handled
+              with <Highlight>TanStack Query</Highlight>, providing efficient
+              caching as well as built-in loading and error handling.
             </p>
           </>
         }
@@ -70,15 +67,20 @@ export default function Projects() {
         description={
           <>
             <p className="text-muted-foreground">
-              The accompanying documentation walks through building a CI/CD
-              pipeline for a containerized application using GitHub Actions and
-              deploying it to AWS Elastic Container Service (ECS) with Fargate.
+              The accompanying documentation walks through building a{" "}
+              <Highlight>CI/CD </Highlight>
+              pipeline for a containerized application using{" "}
+              <Highlight>GitHub Actions</Highlight> and deploying it to{" "}
+              <Highlight>AWS Elastic Container Service (ECS)</Highlight> with{" "}
+              <Highlight>Fargate</Highlight>.
             </p>
             <p className="text-muted-foreground">
-              The documentation includes integration with Amazon RDS for
-              database hosting and AWS Secrets Manager for credential
-              management, including automatic secret rotation using AWS Lambda.
-              The pipeline uses GitHub’s OpenID Connect (OIDC) provider to
+              The documentation includes integration with{" "}
+              <Highlight>AWS RDS</Highlight> for database hosting and{" "}
+              <Highlight>AWS Secrets Manager</Highlight> for credential
+              management, including automatic secret rotation using{" "}
+              <Highlight>AWS Lambda</Highlight>. The pipeline uses{" "}
+              <Highlight>GitHub’s OpenID Connect (OIDC) provider</Highlight> to
               enable authentication between GitHub Actions and AWS.
             </p>
           </>
@@ -96,9 +98,10 @@ export default function Projects() {
               Management Systems) course taught by Tero Karvinen.
             </p>
             <p className="text-muted-foreground">
-              In this course, I gained hands-on experience with Infrastructure
-              as Code (IaC) and automation for Linux system administration.
-              Achieved grade 5/5.
+              In this course, I gained hands-on experience with{" "}
+              <Highlight>Infrastructure as Code (IaC)</Highlight> and automation
+              for <Highlight>Linux system administration</Highlight>. Achieved
+              grade 5/5.
             </p>
           </>
         }
@@ -115,11 +118,18 @@ export default function Projects() {
               course taught by Tero Karvinen.
             </p>
             <p className="text-muted-foreground">
-              The reports cover penetration testing tasks such as service
-              enumeration, fuzzing, proxy-based inspection, and exploitation of
-              common web vulnerabilities (XSS, SQLi, IDOR, SSRF, SSTI). Tools
-              used include nmap, ffuf, ZAP, mitmproxy, Hashcat, John the Ripper,
-              and Metasploit. Achieved grade 5/5.
+              The reports cover <Highlight>penetration testing</Highlight> tasks
+              such as service enumeration, fuzzing, proxy-based inspection, and
+              exploitation of common web vulnerabilities (
+              <Highlight>XSS</Highlight>, <Highlight>SQLi</Highlight>,{" "}
+              <Highlight>IDOR</Highlight>, <Highlight>SSRF</Highlight>,{" "}
+              <Highlight>SSTI</Highlight>). Tools used include{" "}
+              <Highlight>nmap</Highlight>, <Highlight>masscan</Highlight>,
+              <Highlight>ffuf</Highlight>, <Highlight>OWASP ZAP</Highlight>,{" "}
+              <Highlight>mitmproxy</Highlight>, <Highlight>msfvenom</Highlight>,
+              <Highlight>Metasploit</Highlight>, <Highlight>Hashcat</Highlight>,{" "}
+              <Highlight>John the Ripper</Highlight> and{" "}
+              <Highlight>pencode</Highlight>. Achieved grade 5/5.
             </p>
           </>
         }
@@ -132,13 +142,13 @@ export default function Projects() {
         description={
           <>
             <p className="text-muted-foreground">
-              A React Native app for practicing vocabulary in a simple game-like
-              way.
+              A <Highlight>React Native</Highlight> app for practicing
+              vocabulary in a simple game-like way.
             </p>
             <p className="text-muted-foreground">
               Word list can be imported as CSV. Translations can be from your
-              own list, or you can use the optional ChatGPT feature to generate
-              them.
+              own list, or you can use the optional{" "}
+              <Highlight>ChatGPT</Highlight> feature to generate them.
             </p>
           </>
         }
@@ -147,4 +157,8 @@ export default function Projects() {
       />
     </main>
   );
+}
+
+function Highlight({ children }: { children: React.ReactNode }) {
+  return <span className="text-foreground font-medium">{children}</span>;
 }
