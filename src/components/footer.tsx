@@ -20,7 +20,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="py-16 md:py-32 mt-auto">
+    <footer className="py-16 md:pt-32 pb-10 mt-auto">
       <div className="mx-auto max-w-5xl px-6">
         <a
           href="/"
@@ -30,7 +30,7 @@ export default function Footer() {
           pinkkila
         </a>
 
-        <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
+        <div className="my-6 flex flex-wrap justify-center gap-6 text-sm">
           {links.map((link, index) => (
             <a
               key={index}
@@ -40,7 +40,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
+        <div className="my-6 flex flex-wrap justify-center gap-6 text-sm">
           <a
             href="https://www.linkedin.com/in/pinkkila/"
             target="_blank"
