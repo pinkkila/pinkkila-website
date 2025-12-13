@@ -2,11 +2,12 @@ import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
+import { Link } from "react-router";
 
 const menuItems = [
   { name: 'Home', href: '/' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'About', href: '#link' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'About', href: '/about' },
 ]
 
 export const Header = () => {
@@ -49,11 +50,11 @@ export const Header = () => {
               <ul className="flex gap-8 text-sm">
                 {menuItems.map((item, index) => (
                   <li key={index}>
-                    <a
-                      href={item.href}
+                    <Link
+                      to={item.href}
                       className="text-muted-foreground hover:text-accent-foreground block duration-150">
                       <span>{item.name}</span>
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

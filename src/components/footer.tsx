@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 
 const links = [
   {
@@ -6,11 +7,11 @@ const links = [
   },
   {
     title: 'Projects',
-    href: '#projects',
+    href: '/projects',
   },
   {
     title: 'About',
-    href: '#',
+    href: '/about',
   },
 ]
 
@@ -28,12 +29,12 @@ export default function Footer() {
 
         <div className="my-6 flex flex-wrap justify-center gap-6 text-sm">
           {links.map((link, index) => (
-            <a
+            <Link
               key={index}
-              href={link.href}
+              to={link.href}
               className="text-muted-foreground hover:text-primary block duration-150">
               <span>{link.title}</span>
-            </a>
+            </Link>
           ))}
         </div>
         <div className="my-6 flex flex-wrap justify-center gap-6 text-sm">
