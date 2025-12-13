@@ -1,10 +1,11 @@
-import {Button} from "@/components/ui/button.tsx";
+import {Header} from "@/components/header.tsx";
 
 export default function App() {
 
   return (
     <>
-      <Button>testing</Button>
+      <Header />
+      <div className="h-[5000px]">dlo</div>
     </>
   )
 }
