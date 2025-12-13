@@ -5,7 +5,7 @@ import restDashboard from "@/assets/rest-dashboard.png";
 import awsDiagram from "@/assets/aws-diagram.png";
 import palvelintenHallinta from "@/assets/palvelinten-hallinta.png";
 import tuntkeutumisTestaus from "@/assets/tunkeutumis-testaus.png";
-import reactNative from "@/assets/react-native.png"
+import reactNative from "@/assets/react-native.png";
 
 export default function Projects() {
   return (
