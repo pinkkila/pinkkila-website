@@ -9,10 +9,6 @@ const links = [
     href: '#projects',
   },
   {
-    title: 'Education',
-    href: '#',
-  },
-  {
     title: 'About',
     href: '#',
   },
