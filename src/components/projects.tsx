@@ -44,6 +44,9 @@ export default function Projects() {
           "TanStack Query",
           "OAuth2",
           "OpenID Connect",
+          "BFF",
+          "Authorization Server",
+          "Resource Server",
           "REST API",
           "PostgreSQL",
         ]}
@@ -83,6 +86,7 @@ export default function Projects() {
           "shadcn/ui",
           "TanStack Query",
           "REST API",
+          "SQL",
           "PostgreSQL",
           "Testing",
         ]}

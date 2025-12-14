@@ -52,7 +52,7 @@ export default function Project({ title, description, stack, imageUrl, githubLin
 
             </div>
           </div>
-          <div className="relative mt-6 sm:mt-0">
+          <div className="relative mt-6 sm:mt-0 hidden sm:block">
             <div className="bg-linear-to-b aspect-67/34 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
               <img
                 src={imageUrl}
