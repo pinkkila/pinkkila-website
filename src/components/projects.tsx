@@ -9,7 +9,10 @@ import reactNative from "@/assets/react-native.png";
 
 export default function Projects() {
   return (
-    <main className="pt-10">
+    <main className="pt-30">
+      <h1 className="mx-auto max-w-4xl text-balance text-center text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]">
+        Projects
+      </h1>
       <Project
         title="Webstore Platform Project"
         description={
@@ -187,7 +190,7 @@ export default function Projects() {
           "Metasploit",
           "Hashcat",
           "John the Ripper",
-          "pencode"
+          "pencode",
         ]}
         imageUrl={tuntkeutumisTestaus}
         githubLink="https://github.com/pinkkila/tunkeutumistestaus"
