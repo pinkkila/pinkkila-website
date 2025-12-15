@@ -60,9 +60,7 @@ export default function Hero() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg sm:text-xl"
                 >
-                  Hi, my name is Pinkkilä. Petteri Pinkkilä. I&#39;m software development student at
-                  Haaga-Helia University of Applied Sciences, specializing in
-                  full-stack web development.
+                  Hi, my name is Petteri. Welcome to my Portfolio!
                 </TextEffect>
 
 
@@ -78,7 +76,7 @@ export default function Hero() {
                     },
                     ...transitionVariants,
                   }}
-                  className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
+                  className="mt-12 flex flex-col items-center justify-center gap-2">
                   <div
                     key={1}
                     className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5">

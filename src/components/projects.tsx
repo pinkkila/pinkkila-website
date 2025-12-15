@@ -6,13 +6,61 @@ import awsDiagram from "@/assets/aws-diagram.png";
 import palvelintenHallinta from "@/assets/palvelinten-hallinta.png";
 import tuntkeutumisTestaus from "@/assets/tunkeutumis-testaus.png";
 import reactNative from "@/assets/react-native.png";
+import { TextEffect } from "@/components/ui/text-effect.tsx";
+import { AnimatedGroup } from "@/components/ui/animated-group.tsx";
+
+const transitionVariants = {
+  item: {
+    hidden: {
+      opacity: 0,
+      filter: 'blur(12px)',
+      y: 12,
+    },
+    visible: {
+      opacity: 1,
+      filter: 'blur(0px)',
+      y: 0,
+      transition: {
+        type: 'spring',
+        bounce: 0.3,
+        duration: 1.5,
+      },
+    },
+  },
+} as const;
 
 export default function Projects() {
   return (
     <main className="pt-30">
-      <h1 className="mx-auto max-w-4xl text-balance text-center text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]">
+      {/*<h1 className="mx-auto max-w-4xl text-balance text-center text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]">*/}
+      {/*  Projects*/}
+      {/*</h1>*/}
+
+      <TextEffect
+        preset="fade-in-blur"
+        speedSegment={0.3}
+        as="h1"
+        className="mx-auto mt-8 max-w-4xl text-balance text-center text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]"
+      >
         Projects
-      </h1>
+      </TextEffect>
+
+
+      <AnimatedGroup
+        variants={{
+          container: {
+            visible: {
+              transition: {
+                staggerChildren: 0.05,
+                delayChildren: 0.75,
+              },
+            },
+          },
+          ...transitionVariants,
+        }}
+        className="">
+
+
       <Project
         title="Webstore Platform Project"
         description={
@@ -222,6 +270,9 @@ export default function Projects() {
         imageUrl={reactNative}
         githubLink="https://github.com/pinkkila/tunkeutumistestaus"
       />
+
+
+      </AnimatedGroup>
     </main>
   );
 }
