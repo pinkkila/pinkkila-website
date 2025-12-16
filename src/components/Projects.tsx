@@ -135,6 +135,15 @@ export default function Projects() {
                 with <Highlight>TanStack Query</Highlight>, providing efficient
                 caching as well as built-in loading and error handling.
               </p>
+              <p className="text-muted-foreground">
+                Project is currently debloyed at{" "}
+                <a
+                  target="_blank"
+                  href="https://dev.pinkkila.com"
+                  rel="noopener noreferrer"
+                  className="text-foreground font-bold hover:underline hover:text-accent-foreground"
+                >dev.pinkkila.com</a>. App is build for desktop use only.
+              </p>
             </>
           }
           stack={[
