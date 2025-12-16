@@ -21,7 +21,7 @@ export default function Project({
   githubLink,
 }: ProjectProps) {
   return (
-    <section className="py-16 md:py-32">
+    <section className="py-16 md:py-24">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
         <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl">
           {title}
@@ -39,11 +39,11 @@ export default function Project({
             </div>
 
           </div>
-          <div className="relative mt-6 sm:mt-0">
+          <div className="relative mt-1 sm:mt-0">
             {carouselImages.length > 1 ? (
               <ImgCarousel carouselImages={carouselImages} />
             ) : (
-              <div className="bg-linear-to-b aspect-67/34 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
+              <div className="bg-linear-to-b aspect-67/34 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700 mt-5">
                 <img
                   src={carouselImages[0].src}
                   alt={carouselImages[0].alt}

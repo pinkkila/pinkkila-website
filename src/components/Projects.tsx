@@ -34,7 +34,7 @@ const transitionVariants = {
 
 export default function Projects() {
   return (
-    <main className="pt-30">
+    <main className="pt-30 sm:px-10">
       <TextEffect
         preset="fade-in-blur"
         speedSegment={0.3}
