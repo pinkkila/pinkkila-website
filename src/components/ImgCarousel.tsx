@@ -56,13 +56,11 @@ export function ImgCarousel({ carouselImages }: ImgCarouselProps) {
             <CarouselItem key={index}>
               <div className="p-1">
                 <Card className="bg-background border-0">
-                  <CardContent className="flex aspect-video items-center justify-center p-6">
+                  <CardContent className="flex items-center justify-center aspect-video">
                     <img
                       src={img.src}
                       alt={img.alt}
-                      className="rounded-[15px]"
-                      width={1206}
-                      height={612}
+                      className="w-full rounded-[15px] object-cover"
                     />
                   </CardContent>
                 </Card>
