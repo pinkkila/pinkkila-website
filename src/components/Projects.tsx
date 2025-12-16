@@ -4,7 +4,9 @@ import { TextEffect } from "@/components/ui/text-effect.tsx";
 import { AnimatedGroup } from "@/components/ui/animated-group.tsx";
 import pinkkstore from "@/assets/pinkkstore-front-page.png";
 import pinkkstoreCategories from "@/assets/pinkkstore-categories.png";
+import pinkkstoreCart from "@/assets/pinkkstore-cart.png";
 import restDashboard from "@/assets/rest-dashboard.png";
+import restDashboardDay from "@/assets/rest-dashboard-day.png";
 import awsDiagram from "@/assets/aws-diagram.png";
 import palvelintenHallinta from "@/assets/palvelinten-hallinta.png";
 import tuntkeutumisTestaus from "@/assets/tunkeutumis-testaus.png";
@@ -33,7 +35,6 @@ const transitionVariants = {
 export default function Projects() {
   return (
     <main className="pt-30">
-
       <TextEffect
         preset="fade-in-blur"
         speedSegment={0.3}
@@ -106,6 +107,10 @@ export default function Projects() {
               src: pinkkstoreCategories,
               alt: "PinkkStore categories image",
             },
+            {
+              src: pinkkstoreCart,
+              alt: "PinkkStore cart image",
+            },
           ]}
           githubLink="https://github.com/pinkkila/pinkkstore"
         />
@@ -146,7 +151,10 @@ export default function Projects() {
             "PostgreSQL",
             "Testing",
           ]}
-          carouselImages={[{ src: restDashboard, alt: "Dash" }]}
+          carouselImages={[
+            { src: restDashboard, alt: "Rest API & Dashboard image" },
+            { src: restDashboardDay, alt: "Rest API & Dashboard Day image" },
+          ]}
           githubLink="https://github.com/pinkkila/dev-academy-spring-2025-exercise"
         />
 

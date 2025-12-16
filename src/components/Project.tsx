@@ -38,28 +38,8 @@ export default function Project({
               ))}
             </div>
 
-            <div className="grid grid-cols-2 gap-3 pt-6 sm:gap-4">
-              <div className="space-y-3">
-                <Button asChild variant="link">
-                  <a
-                    target="_blank"
-                    href={githubLink}
-                    rel="noopener noreferrer"
-                    className="text-foreground font-bold hover:underline hover:text-accent-foreground"
-                  >
-                    <img
-                      src={githubLogo}
-                      alt="github-logo"
-                      width={20}
-                      height={20}
-                    />
-                    View on GitHub
-                  </a>
-                </Button>
-              </div>
-            </div>
           </div>
-          <div className="relative mt-6 sm:mt-0 hidden sm:block">
+          <div className="relative mt-6 sm:mt-0">
             {carouselImages.length > 1 ? (
               <ImgCarousel carouselImages={carouselImages} />
             ) : (
@@ -74,6 +54,24 @@ export default function Project({
               </div>
             )}
           </div>
+        </div>
+        <div className="space-y-3">
+          <Button asChild variant="link">
+            <a
+              target="_blank"
+              href={githubLink}
+              rel="noopener noreferrer"
+              className="text-foreground font-bold hover:underline hover:text-accent-foreground"
+            >
+              <img
+                src={githubLogo}
+                alt="github-logo"
+                width={20}
+                height={20}
+              />
+              View on GitHub
+            </a>
+          </Button>
         </div>
       </div>
     </section>

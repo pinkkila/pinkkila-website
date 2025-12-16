@@ -68,8 +68,8 @@ export function ImgCarousel({ carouselImages }: ImgCarouselProps) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="hidden sm:flex" />
+        <CarouselNext className="hidden sm:flex" />
       </Carousel>
       <div className="text-muted-foreground py-2 text-center text-sm">
         Slide {current} of {count}
