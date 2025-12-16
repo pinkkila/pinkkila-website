@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "@/components/project.tsx";
+import Project from "@/components/Project.tsx";
 import pinkkstore from "@/assets/pinkkstore-front-page.png";
 import restDashboard from "@/assets/rest-dashboard.png";
 import awsDiagram from "@/assets/aws-diagram.png";
