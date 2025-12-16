@@ -3,6 +3,7 @@ import Project from "@/components/Project.tsx";
 import { TextEffect } from "@/components/ui/text-effect.tsx";
 import { AnimatedGroup } from "@/components/ui/animated-group.tsx";
 import pinkkstore from "@/assets/pinkkstore-front-page.png";
+import pinkkstoreCategories from "@/assets/pinkkstore-categories.png";
 import restDashboard from "@/assets/rest-dashboard.png";
 import awsDiagram from "@/assets/aws-diagram.png";
 import palvelintenHallinta from "@/assets/palvelinten-hallinta.png";
@@ -32,9 +33,6 @@ const transitionVariants = {
 export default function Projects() {
   return (
     <main className="pt-30">
-      {/*<h1 className="mx-auto max-w-4xl text-balance text-center text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]">*/}
-      {/*  Projects*/}
-      {/*</h1>*/}
 
       <TextEffect
         preset="fade-in-blur"
@@ -99,15 +97,14 @@ export default function Projects() {
             "REST API",
             "PostgreSQL",
           ]}
-          imageUrl={pinkkstore}
           carouselImages={[
             {
               src: pinkkstore,
-              alt: "PinkkStore",
+              alt: "PinkkStore frontpage image",
             },
             {
-              src: restDashboard,
-              alt: "Dashboard",
+              src: pinkkstoreCategories,
+              alt: "PinkkStore categories image",
             },
           ]}
           githubLink="https://github.com/pinkkila/pinkkstore"
@@ -149,7 +146,6 @@ export default function Projects() {
             "PostgreSQL",
             "Testing",
           ]}
-          imageUrl={restDashboard}
           carouselImages={[{ src: restDashboard, alt: "Dash" }]}
           githubLink="https://github.com/pinkkila/dev-academy-spring-2025-exercise"
         />
@@ -186,8 +182,7 @@ export default function Projects() {
             "Spring Boot",
             "PostgreSQL",
           ]}
-          imageUrl={awsDiagram}
-          carouselImages={[]}
+          carouselImages={[{ src: awsDiagram, alt: "AWS Diagram Image" }]}
           githubLink="https://github.com/pinkkila/stories"
         />
 
@@ -209,8 +204,12 @@ export default function Projects() {
             </>
           }
           stack={["Linux", "Salt", "Vagrant", "IaC"]}
-          imageUrl={palvelintenHallinta}
-          carouselImages={[]}
+          carouselImages={[
+            {
+              src: palvelintenHallinta,
+              alt: "Palvelinten Hallinta Image",
+            },
+          ]}
           githubLink="https://github.com/pinkkila/palvelinten-hallinta"
         />
 
@@ -254,8 +253,9 @@ export default function Projects() {
             "John the Ripper",
             "pencode",
           ]}
-          imageUrl={tuntkeutumisTestaus}
-          carouselImages={[]}
+          carouselImages={[
+            { src: tuntkeutumisTestaus, alt: "Tunkeutumistestaus Image" },
+          ]}
           githubLink="https://github.com/pinkkila/tunkeutumistestaus"
         />
 
@@ -282,8 +282,9 @@ export default function Projects() {
             "SQLite",
             "OpenAI API",
           ]}
-          imageUrl={reactNative}
-          carouselImages={[]}
+          carouselImages={[
+            { src: reactNative, alt: "Vocabulary Practice App image" },
+          ]}
           githubLink="https://github.com/pinkkila/tunkeutumistestaus"
         />
       </AnimatedGroup>

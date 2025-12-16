@@ -47,7 +47,7 @@ export function ImgCarousel({ carouselImages }: ImgCarouselProps) {
         setApi={setApi}
         plugins={[plugin.current]}
         opts={{ align: "start", loop: true }}
-        className="w-full max-w-xs"
+        className=""
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
@@ -55,12 +55,12 @@ export function ImgCarousel({ carouselImages }: ImgCarouselProps) {
           {carouselImages.map((img, index) => (
             <CarouselItem key={index}>
               <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
+                <Card className="bg-background border-0">
+                  <CardContent className="flex aspect-video items-center justify-center p-6">
                     <img
                       src={img.src}
                       alt={img.alt}
-                      className="hidden rounded-[15px] dark:block"
+                      className="rounded-[15px]"
                       width={1206}
                       height={612}
                     />

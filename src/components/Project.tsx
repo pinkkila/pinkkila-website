@@ -9,7 +9,6 @@ type ProjectProps = {
   title: string;
   description: React.ReactNode;
   stack: string[];
-  imageUrl: string;
   carouselImages: TCarouselImg[];
   githubLink: string;
 };
@@ -18,7 +17,6 @@ export default function Project({
   title,
   description,
   stack,
-  imageUrl,
   carouselImages,
   githubLink,
 }: ProjectProps) {
@@ -67,9 +65,9 @@ export default function Project({
             ) : (
               <div className="bg-linear-to-b aspect-67/34 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
                 <img
-                  src={imageUrl}
-                  className="hidden rounded-[15px] dark:block"
-                  alt="payments illustration dark"
+                  src={carouselImages[0].src}
+                  alt={carouselImages[0].alt}
+                  className="rounded-[15px]"
                   width={1206}
                   height={612}
                 />
