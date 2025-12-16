@@ -24,7 +24,7 @@ export function ImgCarousel({ carouselImages }: ImgCarouselProps) {
 
   const plugin = React.useRef(
     Autoplay({
-      delay: 2000,
+      delay: 4000,
       stopOnInteraction: false,
       stopOnMouseEnter: true,
     }),
@@ -53,14 +53,14 @@ export function ImgCarousel({ carouselImages }: ImgCarouselProps) {
       >
         <CarouselContent>
           {carouselImages.map((img, index) => (
-            <CarouselItem key={index}>
-              <div className="p-1">
+            <CarouselItem key={index} >
+              <div className="">
                 <Card className="bg-background border-0">
-                  <CardContent className="flex items-center justify-center aspect-video p-0">
+                  <CardContent className="flex items-center justify-center p-0">
                     <img
                       src={img.src}
                       alt={img.alt}
-                      className="w-full rounded-[15px] object-cover"
+                      className="w-full h-full rounded-[15px] object-cover"
                     />
                   </CardContent>
                 </Card>
