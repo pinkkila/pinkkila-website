@@ -54,7 +54,7 @@ export function ImgCarousel({ carouselImages }: ImgCarouselProps) {
         <CarouselContent>
           {carouselImages.map((img, index) => (
             <CarouselItem key={index}>
-              <div className="">
+              <div className="p-1">
                 <Card className="bg-background border-0">
                   <CardContent className="flex items-center justify-center aspect-video p-0">
                     <img
