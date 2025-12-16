@@ -55,7 +55,7 @@ export default function Project({
             )}
           </div>
         </div>
-        <div className="space-y-3">
+        <div className="space-y-3 -m-2 sm:-m-4">
           <Button asChild variant="link">
             <a
               target="_blank"
