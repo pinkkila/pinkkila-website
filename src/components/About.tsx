@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <main className="pt-20 sm:px-10">
-      <section className="py-16 md:py-32">
+      <section className="py-10 md:py-22">
         <div className="mx-auto max-w-5xl px-6">
           <div className="grid gap-6 md:grid-cols-2 md:gap-12">
             <div>
