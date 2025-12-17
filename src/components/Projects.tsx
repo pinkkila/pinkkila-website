@@ -97,6 +97,7 @@ export default function Projects() {
             "Resource Server",
             "REST API",
             "PostgreSQL",
+            "RabbitMQ"
           ]}
           carouselImages={[
             {
