@@ -10,6 +10,7 @@ import restDashboardDay from "@/assets/rest-dashboard-day.png";
 import awsDiagram from "@/assets/aws-diagram.png";
 import palvelintenHallinta from "@/assets/palvelinten-hallinta.png";
 import tuntkeutumisTestaus from "@/assets/tunkeutumis-testaus.png";
+import verkkoonTunkeutuminen from "@/assets/verkkoon-tunkeutuminen.png";
 import reactNative from "@/assets/react-native.png";
 
 const transitionVariants = {
@@ -131,8 +132,8 @@ export default function Projects() {
                 This project is a REST API and dashboard application for
                 exploring electricity data. The backend is built with Spring
                 Boot and provides endpoints with sorting, pagination, and
-                filtering, along with testing examples (unit, controller,
-                JSON serialization, JDBC, and integration/end-to-end tests).
+                filtering, along with testing examples (unit, controller, JSON
+                serialization, JDBC, and integration/end-to-end tests).
               </p>
               <p className="text-foreground/88">
                 The frontend is a dashboard build with React and styled with
@@ -289,6 +290,40 @@ export default function Projects() {
             { src: tuntkeutumisTestaus, alt: "Tunkeutumistestaus Image" },
           ]}
           githubLink="https://github.com/pinkkila/tunkeutumistestaus"
+        />
+
+        <Project
+          title="Verkkoon tunkeutuminen ja tiedustelu - Homework Reports"
+          description={
+            <>
+              <p className="text-foreground/88">
+                Homework reports for the Verkkoon tunkeutuminen ja tiedustelu
+                (Network Attacks and Reconnaissance) course taught by Tero
+                Karvinen and Lari Iso-Anttila.
+              </p>
+              <p className="text-foreground/88">
+                The course covered the Internet protocol suite (TCP/IP stack),
+                network traffic analysis with Wireshark, and various attack
+                vectors in emulated network environments. Practical exercises
+                included ICMP spoofing, MITM attacks via ARP cache poisoning,
+                TCP session hijacking, and executing DDoS attacks.
+              </p>
+              <p className="text-foreground/88">
+                The reports also explore credential harvesting using Evilginx2,
+                as well as more specialized topics like radio-frequency analysis
+                with Software-Defined Radio (SDR) and investigating NFC/RFID
+                security vulnerabilities.
+              </p>
+            </>
+          }
+          stack={["Kali Linux", "Wireshark", "nmap", "Evilginx2", "mininet"]}
+          carouselImages={[
+            {
+              src: verkkoonTunkeutuminen,
+              alt: "Verkkoon tunkeutuminen ja tiedustelu Image",
+            },
+          ]}
+          githubLink="https://github.com/pinkkila/verkkoon-tunkeutuminen"
         />
 
         <Project
