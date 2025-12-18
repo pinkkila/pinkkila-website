@@ -5,16 +5,16 @@ export default function About() {
     <main className="pt-20 sm:px-10">
       <section className="py-10 md:py-22">
         <div className="mx-auto max-w-5xl px-6">
-          <div className="grid gap-6 md:grid-cols-2 md:gap-12">
+          <div className="grid gap-12 md:grid-cols-2 md:gap-12">
             <div>
               <TextEffectDelayH2 delay={0}>Full-Stack</TextEffectDelayH2>
               <TextEffectDelayH2 delay={0.2}>Java</TextEffectDelayH2>
               <TextEffectDelayH2 delay={0.3}>Spring Boot</TextEffectDelayH2>
               <TextEffectDelayH2 delay={0.4}>TypeScript</TextEffectDelayH2>
               <TextEffectDelayH2 delay={0.5}>React</TextEffectDelayH2>
-              <TextEffectDelayH2 delay={0.6}>AWS</TextEffectDelayH2>
-              <TextEffectDelayH2 delay={0.7}>Linux</TextEffectDelayH2>
-              <TextEffectDelayH2 delay={0.8}>Learning</TextEffectDelayH2>
+              <TextEffectDelayH2 delay={0.6}>Tailwind CSS</TextEffectDelayH2>
+              <TextEffectDelayH2 delay={0.8}>AWS</TextEffectDelayH2>
+              <TextEffectDelayH2 delay={0.9}>Linux</TextEffectDelayH2>
             </div>
 
             <div className="space-y-6">
@@ -31,11 +31,11 @@ export default function About() {
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.7}>
-                I have hands-on experience with AWS, CI/CD pipelines, automated
-                testing, and Linux system administration. My studies have also
-                covered penetration testing and network security, giving me a
-                solid awareness of modern security challenges and the importance
-                of building applications with security in mind.
+                I’ve gained practical experience working with AWS, CI/CD
+                pipelines, automated testing, and Linux environments. Alongside
+                this, my studies in penetration testing and network security
+                have helped me develop a security-aware mindset when designing
+                and building applications.
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.8}>
@@ -46,9 +46,9 @@ export default function About() {
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.9}>
-                Outside of development, I play guitar, and I’m planning a return
-                to the ice rink soon (my ice hockey hobby has been on pause for
-                too long).
+                Outside of development, I play guitar and enjoy music. I also
+                play ice hockey, which is currently on pause, but I’m planning
+                to return to it soon.
               </TextEffectDelayP>
             </div>
           </div>

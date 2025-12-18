@@ -67,7 +67,7 @@ export const Header = () => {
                     <li key={index}>
                       <a
                         href={item.href}
-                        className="text-muted-foreground hover:text-accent-foreground block duration-150">
+                        className="text-foreground sm:text-muted-foreground sm:hover:text-accent-foreground block duration-150">
                         <span>{item.name}</span>
                       </a>
                     </li>

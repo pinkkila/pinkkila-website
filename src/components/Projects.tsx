@@ -75,7 +75,7 @@ export default function Projects() {
               </p>
               <p className="text-foreground/88">
                 The frontend (store) is implemented with Next.js and styled
-                using shadcn/ui and Tailwind CSS. Data fetching is handled
+                using Tailwind CSS and shadcn/ui. Data fetching is handled
                 through a mix of server components and TanStack Query for
                 caching, prefetching, and loading/error handling. The BFF
                 manages user sessions and OAuth tokens, ensuring the browser
@@ -131,7 +131,7 @@ export default function Projects() {
                 This project is a REST API and dashboard application for
                 exploring electricity data. The backend is built with Spring
                 Boot and provides endpoints with sorting, pagination, and
-                filtering, along with comprehensive testing (unit, controller,
+                filtering, along with testing examples (unit, controller,
                 JSON serialization, JDBC, and integration/end-to-end tests).
               </p>
               <p className="text-foreground/88">

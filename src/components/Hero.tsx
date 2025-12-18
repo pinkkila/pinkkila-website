@@ -60,7 +60,7 @@ export default function Hero() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg sm:text-xl"
                 >
-                  Hi, my name is Petteri. Welcome to my Portfolio!
+                  Welcome to my Portfolio!
                 </TextEffect>
 
 
