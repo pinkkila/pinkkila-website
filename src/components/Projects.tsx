@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Project from "@/components/Project.tsx";
 import { TextEffect } from "@/components/ui/text-effect.tsx";
 import { AnimatedGroup } from "@/components/ui/animated-group.tsx";
@@ -62,22 +62,29 @@ export default function Projects() {
           title="Webstore Platform Project"
           description={
             <>
-              <p className="text-muted-foreground">
-                Full-stack web app with{" "}
-                <Highlight>Backend for Frontend (BFF)</Highlight> architecture.
-                It uses multiple <Highlight>Spring Boot</Highlight> services,
-                and authentication and authorization are handled via
-                <Highlight> OAuth2</Highlight> and{" "}
-                <Highlight>OpenID Connect</Highlight>.
+              <p className="text-foreground/88">
+                The project consists of a customer-facing webstore and a CRM
+                application*, both developed as independent applications within
+                a single monorepo. Both applications follow a Backend for
+                Frontend (BFF) pattern implemented with Spring Boot, and each
+                includes its own frontend, BFF, authorization server, resource
+                server, and reverse proxy. Authentication and authorization are
+                handled via OAuth2 and OpenID Connect through dedicated
+                authorization servers, while protected REST APIs are exposed by
+                resource servers backed by PostgreSQL.
               </p>
-              <p className="text-muted-foreground">
-                The frontend is implemented with <Highlight>Next.js</Highlight>,
-                combining server and client components, and styled using{" "}
-                <Highlight>shadcn/ui</Highlight> and{" "}
-                <Highlight>Tailwind CSS</Highlight>. Data fetching is handled
-                through a mix of server components and
-                <Highlight> TanStack Query </Highlight>
-                for caching, prefetching, loading states and error handling.
+              <p className="text-foreground/88">
+                The frontend (store) is implemented with Next.js and styled
+                using shadcn/ui and Tailwind CSS. Data fetching is handled
+                through a mix of server components and TanStack Query for
+                caching, prefetching, and loading/error handling. The BFF
+                manages user sessions and OAuth tokens, ensuring the browser
+                never handles tokens directly. A reverse proxy service unifies
+                the frontend and BFF under one origin, avoids CORS issues, and
+                enables secure cookie handling.
+              </p>
+              <p className="text-muted-foreground/80 text-sm font-light -mt-2">
+                *CRM is in progress and contains only initial code.
               </p>
             </>
           }
@@ -97,7 +104,7 @@ export default function Projects() {
             "Resource Server",
             "REST API",
             "PostgreSQL",
-            "RabbitMQ"
+            "RabbitMQ",
           ]}
           carouselImages={[
             {
@@ -120,30 +127,35 @@ export default function Projects() {
           title="REST API and Dashboard exercise"
           description={
             <>
-              <p className="text-muted-foreground">
-                The backend is a <Highlight>REST API</Highlight> built with{" "}
-                <Highlight>Spring Boot</Highlight>, supporting sorting,
-                pagination, and filtering through query parameters. The project
-                includes comprehensive <Highlight>testing</Highlight> examples,
-                such as unit tests, JSON serialization tests, controller tests,
-                JDBC tests, and full integration/end-to-end tests.
+              <p className="text-foreground/88">
+                This project is a REST API and dashboard application for
+                exploring electricity data. The backend is built with Spring
+                Boot and provides endpoints with sorting, pagination, and
+                filtering, along with comprehensive testing (unit, controller,
+                JSON serialization, JDBC, and integration/end-to-end tests).
               </p>
-              <p className="text-muted-foreground">
-                The frontend is a dashboard build with{" "}
-                <Highlight>React</Highlight> and styled with{" "}
-                <Highlight>Tailwind CSS </Highlight>
-                and <Highlight>shadcn/ui</Highlight>. Data fetching is handled
-                with <Highlight>TanStack Query</Highlight>, providing efficient
-                caching as well as built-in loading and error handling.
+              <p className="text-foreground/88">
+                The frontend is a dashboard build with React and styled with
+                Tailwind CSS and shadcn/ui. Data fetching is handled with
+                TanStack Query, providing caching and loading/error handling.
               </p>
-              <p className="text-muted-foreground">
-                Project is currently debloyed at{" "}
+              <p className="text-foreground/88">
+                On the database side, I implemented a PostgreSQL view that
+                aggregates hourly electricity data into daily metrics, including
+                total production and consumption, average prices, and sequences
+                of consecutive negative prices.{" "}
+              </p>
+              <p className="text-foreground/88">
+                The project is currently deployed at{" "}
                 <a
                   target="_blank"
                   href="https://dev.pinkkila.com"
                   rel="noopener noreferrer"
-                  className="text-foreground font-bold hover:underline hover:text-accent-foreground"
-                >dev.pinkkila.com</a>. App is build for desktop use only.
+                  className="text-foreground font-medium hover:underline hover:text-accent-foreground"
+                >
+                  dev.pinkkila.com
+                </a>
+                . The app is designed for desktop use only.
               </p>
             </>
           }
@@ -160,6 +172,7 @@ export default function Projects() {
             "SQL",
             "PostgreSQL",
             "Testing",
+            "Docker",
           ]}
           carouselImages={[
             { src: restDashboard, alt: "Rest API & Dashboard image" },
@@ -172,22 +185,19 @@ export default function Projects() {
           title="AWS GitHub CI/CD project"
           description={
             <>
-              <p className="text-muted-foreground">
-                The accompanying documentation walks through building a{" "}
-                <Highlight>CI/CD </Highlight>
-                pipeline for a containerized application using{" "}
-                <Highlight>GitHub Actions</Highlight> and deploying it to{" "}
-                <Highlight>AWS Elastic Container Service (ECS)</Highlight> with{" "}
-                <Highlight>Fargate</Highlight>.
+              <p className="text-foreground/88">
+                The purpose of this project was to implement a CI/CD pipeline
+                and document the process. The accompanying documentation walks
+                through building a CI/CD pipeline for a containerized
+                application using GitHub Actions and deploying it to AWS Elastic
+                Container Service (ECS) with Fargate.
               </p>
-              <p className="text-muted-foreground">
-                The documentation includes integration with{" "}
-                <Highlight>AWS RDS</Highlight> for database hosting and{" "}
-                <Highlight>AWS Secrets Manager</Highlight> for credential
-                management, including automatic secret rotation using{" "}
-                <Highlight>AWS Lambda</Highlight>. The pipeline uses{" "}
-                <Highlight>GitHub’s OpenID Connect (OIDC) provider</Highlight>{" "}
-                to enable authentication between GitHub Actions and AWS.
+              <p className="text-foreground/88">
+                The documentation includes integration with AWS RDS for database
+                hosting and AWS Secrets Manager for credential management,
+                including automatic secret rotation using AWS Lambda. The
+                pipeline uses GitHub’s OpenID Connect (OIDC) provider to enable
+                authentication between GitHub Actions and AWS.
               </p>
             </>
           }
@@ -208,16 +218,21 @@ export default function Projects() {
           title="Palvelinten Hallinta - Homework Reports"
           description={
             <>
-              <p className="text-muted-foreground">
+              <p className="text-foreground/88">
                 Homework reports for Palvelinten Hallinta (Configuration
                 Management Systems) course taught by Tero Karvinen.
               </p>
-              <p className="text-muted-foreground">
-                In this course, I gained hands-on experience with{" "}
-                <Highlight>Infrastructure as Code (IaC)</Highlight> and
-                automation for{" "}
-                <Highlight>Linux system administration</Highlight>. Achieved
-                grade 5/5.
+              <p className="text-foreground/88">
+                The course focused on Infrastructure as Code (IaC) and
+                automation for Linux system administration. The work
+                demonstrates configuring Linux servers and services using Salt,
+                as well as building reproducible environments with Vagrant.
+              </p>
+              <p className="text-foreground/88">
+                The coursework emphasizes key configuration management
+                principles such as idempotency and single source of truth, while
+                strengthening practical skills in Linux system administration
+                and troubleshooting.
               </p>
             </>
           }
@@ -235,25 +250,24 @@ export default function Projects() {
           title="Tunkeutumistestaus - Homework Reports"
           description={
             <>
-              <p className="text-muted-foreground">
+              <p className="text-foreground/88">
                 Homework reports for the Tunkeutumistestaus (Penetration
                 Testing) course taught by Tero Karvinen.
               </p>
-              <p className="text-muted-foreground">
-                The reports cover <Highlight>penetration testing</Highlight>{" "}
-                tasks such as service enumeration, fuzzing, proxy-based
-                inspection, and exploitation of common web vulnerabilities (
-                <Highlight>XSS</Highlight>, <Highlight>SQLi</Highlight>,{" "}
-                <Highlight>IDOR</Highlight>, <Highlight>SSRF</Highlight>,{" "}
-                <Highlight>SSTI</Highlight>). Tools used include{" "}
-                <Highlight>nmap</Highlight>, <Highlight>masscan</Highlight>,
-                <Highlight>ffuf</Highlight>, <Highlight>OWASP ZAP</Highlight>,{" "}
-                <Highlight>mitmproxy</Highlight>,{" "}
-                <Highlight>msfvenom</Highlight>,
-                <Highlight>Metasploit</Highlight>,{" "}
-                <Highlight>Hashcat</Highlight>,{" "}
-                <Highlight>John the Ripper</Highlight> and{" "}
-                <Highlight>pencode</Highlight>. Achieved grade 5/5.
+              <p className="text-foreground/88">
+                The course included vulnerability scanning and network/service
+                enumeration, as well as testing for common web application
+                vulnerabilities such as XSS, SQL injection, path traversal,
+                IDOR, SSRF, and SSTI. Exercises also covered proxy-based
+                testing, traffic analysis, automated fuzzing, password and hash
+                cracking, and custom exploit development.
+              </p>
+              <p className="text-foreground/88">
+                Tools and frameworks used include nmap, masscan, ffuf, OWASP
+                ZAP, mitmproxy, msfvenom, Metasploit, Hashcat, John the Ripper,
+                and pencode. The reports demonstrate practical skills in
+                identifying and exploiting security issues in a controlled
+                environment.
               </p>
             </>
           }
@@ -281,14 +295,16 @@ export default function Projects() {
           title="Vocabulary Practice App"
           description={
             <>
-              <p className="text-muted-foreground">
-                A <Highlight>React Native</Highlight> app for practicing
-                vocabulary in a simple game-like way.
+              <p className="text-foreground/88">
+                A React Native app for practicing vocabulary in a simple,
+                game-like way. Users can import word lists as CSV files and use
+                their own translations or generate them using OpenAI's ChatGPT
+                API.
               </p>
-              <p className="text-muted-foreground">
-                Word list can be imported as CSV. Translations can be from your
-                own list, or you can use the optional{" "}
-                <Highlight>ChatGPT</Highlight> feature to generate them.
+              <p className="text-foreground/88">
+                The app is built with Expo and uses SQLite for local storage,
+                Expo Router for navigation, and Expo DocumentPicker and
+                FileSystem for importing and managing word lists.
               </p>
             </>
           }
@@ -310,6 +326,6 @@ export default function Projects() {
   );
 }
 
-function Highlight({ children }: { children: React.ReactNode }) {
-  return <span className="text-foreground font-medium">{children}</span>;
-}
+// function Highlight({ children }: { children: React.ReactNode }) {
+//   return <span className="text-foreground font-medium">{children}</span>;
+// }

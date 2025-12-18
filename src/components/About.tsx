@@ -19,41 +19,36 @@ export default function About() {
 
             <div className="space-y-6">
               <TextEffectDelayP delay={0.6}>
-                Hi, my name is Petteri. It’s great to have you visiting my
+                Hi, my name is Petteri — it’s great to have you visiting my
                 portfolio!
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.6}>
                 I’m a software development student at Haaga-Helia University of
-                Applied Sciences, specializing in full-stack web development.
+                Applied Sciences, specializing in full-stack web development. I
+                have focused on building applications using Java with Spring
+                Boot and TypeScript with React.
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.7}>
-                In my studies and personal projects, I’ve focused on building
-                modern web applications using Java with Spring Boot and
-                TypeScript with React. I have hands-on experience with AWS,
-                CI/CD pipelines, automated testing, and Linux-based
-                environments. I’ve also studied penetration testing and network
-                security, which has given me a strong awareness of modern
-                security challenges and the importance of building applications
-                with security in mind.
+                I have hands-on experience with AWS, CI/CD pipelines, automated
+                testing, and Linux system administration. My studies have also
+                covered penetration testing and network security, giving me a
+                solid awareness of modern security challenges and the importance
+                of building applications with security in mind.
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.8}>
-                I’m a fast and efficient learner with strong academic
-                performance in my core professional studies.
-              </TextEffectDelayP>
-
-              <TextEffectDelayP delay={0.9}>
                 In addition to my technical background, I hold a BBA in Sales
                 and Marketing and have hands-on experience in sales, which has
                 given me a strong understanding of business needs and a proven
-                ability to provide excellent customer service.
+                ability to deliver excellent customer service.
               </TextEffectDelayP>
 
-              <TextEffectDelayP delay={1}>
-                Outside of development, I play guitar and plan to return to
-                playing ice hockey.
+              <TextEffectDelayP delay={0.9}>
+                Outside of development, I play guitar, and I’m planning a return
+                to the ice rink soon (my ice hockey hobby has been on pause for
+                too long).
               </TextEffectDelayP>
             </div>
           </div>
@@ -76,7 +71,7 @@ function TextEffectDelayH2({
       speedSegment={0.3}
       delay={delay}
       as="h2"
-      className="text-4xl font-medium"
+      className="text-5xl font-medium"
     >
       {children}
     </TextEffect>
