@@ -131,10 +131,10 @@ export default function Projects() {
               <p className="text-foreground/88">
                 This project is a REST API and dashboard application for
                 exploring electricity data. The backend is built with Spring
-                Boot and provides endpoints with sorting, pagination, and
-                filtering, along with a test suite covering unit,
-                controller, and JDBC layers, as well as integration
-                tests and JSON serialization validation.
+                Boot and provides endpoints supporting sorting, pagination, and
+                filtering. It is supported by a test suite, including unit
+                tests, JSON serialization tests, web and data slice tests, and
+                full integration tests using Testcontainers.
               </p>
               <p className="text-foreground/88">
                 The frontend is a dashboard build with React and styled with
@@ -176,6 +176,7 @@ export default function Projects() {
             "Testing",
             "JUnit",
             "Mockito",
+            "Testcontainers",
             "Docker",
           ]}
           carouselImages={[
