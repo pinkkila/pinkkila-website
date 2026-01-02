@@ -32,10 +32,10 @@ export default function About() {
 
               <TextEffectDelayP delay={0.7}>
                 I’ve gained practical experience working with AWS, CI/CD
-                pipelines, automated testing, and Linux environments. Alongside
-                this, my studies in penetration testing and network security
-                have helped me develop a security-aware mindset when designing
-                and building applications.
+                pipelines, automated testing, and Linux environments. My studies
+                have also included penetration testing and network security,
+                giving me a strong awareness of modern security challenges and
+                the importance of building applications with security in mind.
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.8}>
