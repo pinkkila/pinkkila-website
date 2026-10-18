@@ -24,30 +24,39 @@ export default function About() {
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.6}>
-                I’m a software development student at Haaga-Helia University of
-                Applied Sciences, specializing in full-stack web development. I
-                have focused on building applications using Java with Spring
-                Boot and TypeScript with React.
+                I am a full-stack developer who enjoys building reliable web
+                applications that are secure, well-tested, and genuinely useful
+                to the people who use them.
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.7}>
-                I’ve gained practical experience working with AWS, CI/CD
-                pipelines, automated testing, and Linux environments. My studies
-                have included penetration testing and network security,
-                giving me a strong awareness of modern security challenges and
-                the importance of building applications with security in mind.
+                My main stack is Java and Spring Boot on the backend and
+                TypeScript with React on the frontend. I also care about what it
+                takes to get software safely into production: automated testing,
+                CI/CD pipelines, containerized deployments on AWS, and Linux
+                environments.
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.8}>
-                In addition to my technical background, I hold a BBA in Sales
-                and Marketing and have hands-on experience in sales, which has
-                given me a strong understanding of business needs and a proven
-                ability to deliver excellent customer service.
+                Security is a particular interest of mine. I wrote my bachelor's
+                thesis on OAuth 2.0 and OpenID Connect, and I've put that
+                knowledge into practice by building a Backend for Frontend (BFF)
+                architecture with Spring Boot and Next.js. I've also studied
+                penetration testing and network security, which shapes how I
+                approach building secure applications.
               </TextEffectDelayP>
 
               <TextEffectDelayP delay={0.9}>
+                I hold bachelor's degrees in Business Information Technology
+                (Software Development) and Business Administration (Sales and
+                Marketing). I have hands-on experience in sales, which has given
+                me a strong understanding of business needs and a proven ability
+                to deliver excellent customer service.
+              </TextEffectDelayP>
+
+              <TextEffectDelayP delay={1.0}>
                 Outside of development, I play guitar and enjoy music. I also
-                play ice hockey, which is currently on pause, but I’m planning
+                play ice hockey, which is currently on pause, but I'm planning
                 to return to it soon.
               </TextEffectDelayP>
             </div>
