@@ -12,6 +12,7 @@ import palvelintenHallinta from "@/assets/palvelinten-hallinta.png";
 import tuntkeutumisTestaus from "@/assets/tunkeutumis-testaus.png";
 import verkkoonTunkeutuminen from "@/assets/verkkoon-tunkeutuminen.png";
 import reactNative from "@/assets/react-native.png";
+import bffPattern from "@/assets/bff-pattern.png";
 
 const transitionVariants = {
   item: {
@@ -122,6 +123,69 @@ export default function Projects() {
             },
           ]}
           githubLink="https://github.com/pinkkila/pinkkstore"
+        />
+
+        <Project
+          title="Backend for Frontend (BFF)"
+          description={
+            <>
+              <p className="text-foreground/88">
+                For my bachelor's thesis I built a full-stack implementation of
+                the Backend for Frontend (BFF) pattern. It follows RFC 10017,
+                the IETF's Best Current Practice for OAuth 2.0 in browser-based
+                apps. A React single-page app signs users in with OAuth 2.0 and
+                OpenID Connect, but the access and refresh tokens never reach
+                the browser, where malicious JavaScript could steal them. A
+                Spring Boot BFF keeps the tokens on the server, refreshes them
+                when they expire and relays them to the API. The browser only
+                holds an HttpOnly session cookie. I didn't hand login off to a
+                hosted identity provider. The authorization server, the BFF and
+                the resource server are three separate Spring Boot services that
+                I built and configured myself.
+              </p>
+              <p className="text-foreground/88">
+                The project is about getting the security details right. Login
+                uses PKCE, state and nonce, and logout ends both the BFF session
+                and the authorization server's login session. Requests are
+                protected with CSRF tokens and restrictive CORS, and the API
+                validates each JWT's issuer, audience and scopes. Automated
+                tests with JUnit, MockMvc, Testcontainers and WireMock check
+                this behavior. For example, they check that a reused
+                authorization code is rejected and that proxied requests carry
+                the access token but not the browser's cookies. The README
+                explains the design decisions and checks the implementation
+                against each requirement in the RFC, including the ones the
+                local setup doesn't meet yet.
+              </p>
+            </>
+          }
+          stack={[
+            "Java",
+            "Spring Boot",
+            "Spring Security",
+            "Spring Authorization Server",
+            "Spring Cloud Gateway",
+            "TypeScript",
+            "React",
+            "TanStack Query",
+            "OAuth2",
+            "OpenID Connect",
+            "BFF",
+            "REST API",
+            "PostgreSQL",
+            "Testing",
+            "JUnit",
+            "Testcontainers",
+            "WireMock",
+            "Docker",
+          ]}
+          carouselImages={[
+            {
+              src: bffPattern,
+              alt: "BFF pattern login flow image",
+            },
+          ]}
+          githubLink="https://github.com/pinkkila/bff-pattern"
         />
 
         <Project
