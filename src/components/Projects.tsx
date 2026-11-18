@@ -130,31 +130,28 @@ export default function Projects() {
           description={
             <>
               <p className="text-foreground/88">
-                A full-stack implementation of
-                the Backend for Frontend (BFF) pattern. It follows RFC 10017,
-                the IETF's Best Current Practice for OAuth 2.0 in browser-based
-                apps. A React single-page app signs users in with OAuth 2.0 and
-                OpenID Connect, but the access and refresh tokens never reach
-                the browser, where malicious JavaScript could steal them. A
-                Spring Boot BFF keeps the tokens on the server, refreshes them
-                when they expire and relays them to the API. The browser only
-                holds an HttpOnly session cookie. I didn't hand login off to a
-                hosted identity provider. The authorization server, the BFF and
-                the resource server are three separate Spring Boot services that
-                I built and configured myself.
+                A full-stack implementation of the Backend for Frontend (BFF)
+                pattern, built to follow RFC 10017, the IETF's Best Current
+                Practice for OAuth 2.0 in browser-based apps. A Spring Boot BFF
+                acts as a confidential OAuth client for a React single-page app.
+                Users sign in with OAuth 2.0 and OpenID Connect, but the access
+                and refresh tokens stay on the BFF and never reach the browser,
+                where malicious JavaScript could steal them. The BFF refreshes
+                the access token when it expires and relays it to the API, while
+                the browser only holds an HttpOnly session cookie. Instead of
+                relying on a third-party identity provider, the project
+                implements the whole OAuth setup as three separate Spring Boot
+                services: the authorization server, the BFF and the resource
+                server.
               </p>
               <p className="text-foreground/88">
-                The project is about getting the security details right. Login
-                uses PKCE, state and nonce, and logout ends both the BFF session
+                Login uses PKCE, state and nonce, and logout ends both the BFF session
                 and the authorization server's login session. Requests are
                 protected with CSRF tokens and restrictive CORS, and the API
                 validates each JWT's issuer, audience and scopes. Automated
                 tests with JUnit, MockMvc, Testcontainers and WireMock check
-                this behavior. For example, they check that a reused
-                authorization code is rejected and that proxied requests carry
-                the access token but not the browser's cookies. The README
-                explains the design decisions and checks the implementation
-                against each requirement in the RFC, including the ones the
+                this behavior. The README explains the design decisions and checks the implementation
+                against requirement in the RFC, including the ones the
                 local setup doesn't meet yet.
               </p>
             </>
