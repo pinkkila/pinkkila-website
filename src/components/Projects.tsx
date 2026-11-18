@@ -130,7 +130,7 @@ export default function Projects() {
           description={
             <>
               <p className="text-foreground/88">
-                For my bachelor's thesis I built a full-stack implementation of
+                A full-stack implementation of
                 the Backend for Frontend (BFF) pattern. It follows RFC 10017,
                 the IETF's Best Current Practice for OAuth 2.0 in browser-based
                 apps. A React single-page app signs users in with OAuth 2.0 and
@@ -163,8 +163,8 @@ export default function Projects() {
             "Java",
             "Spring Boot",
             "Spring Security",
-            "Spring Authorization Server",
             "Spring Cloud Gateway",
+            "Spring Authorization Server",
             "TypeScript",
             "React",
             "TanStack Query",
