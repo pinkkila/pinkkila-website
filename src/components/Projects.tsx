@@ -135,8 +135,7 @@ export default function Projects() {
                 Practice for OAuth 2.0 in browser-based apps. A Spring Boot BFF
                 acts as a confidential OAuth client for a React single-page app.
                 Users sign in with OAuth 2.0 and OpenID Connect, but the access
-                and refresh tokens stay on the BFF and never reach the browser,
-                where malicious JavaScript could steal them. The BFF refreshes
+                and refresh tokens stay on the BFF and never reach the browser. The BFF refreshes
                 the access token when it expires and relays it to the API, while
                 the browser only holds an HttpOnly session cookie. Instead of
                 relying on a third-party identity provider, the project
@@ -148,11 +147,11 @@ export default function Projects() {
                 Login uses PKCE, state and nonce, and logout ends both the BFF session
                 and the authorization server's login session. Requests are
                 protected with CSRF tokens and restrictive CORS, and the API
-                validates each JWT's issuer, audience and scopes. Automated
-                tests with JUnit, MockMvc, Testcontainers and WireMock check
-                this behavior. The README explains the design decisions and checks the implementation
+                validates each JWT's issuer, audience and scopes. Project implements
+                tests with JUnit, MockMvc, Testcontainers and WireMock.
+                The README explains the design decisions and checks the implementation
                 against requirement in the RFC, including the ones the
-                local setup doesn't meet yet.
+                local setup doesn't meet.
               </p>
             </>
           }
