@@ -13,6 +13,7 @@ import tuntkeutumisTestaus from "@/assets/tunkeutumis-testaus.png";
 import verkkoonTunkeutuminen from "@/assets/verkkoon-tunkeutuminen.png";
 import reactNative from "@/assets/react-native.png";
 import bffPattern from "@/assets/bff-pattern.png";
+import roomReservationApi from "@/assets/room-reservation-api.png";
 
 const transitionVariants = {
   item: {
@@ -197,7 +198,7 @@ export default function Projects() {
                 full integration tests using Testcontainers.
               </p>
               <p className="text-foreground/88">
-                The frontend is a dashboard build with React and styled with
+                The frontend is a dashboard built with React and styled with
                 Tailwind CSS and shadcn/ui. Data fetching is handled with
                 TanStack Query, providing caching and loading/error handling.
               </p>
@@ -244,6 +245,49 @@ export default function Projects() {
             { src: restDashboardDay, alt: "Rest API & Dashboard Day image" },
           ]}
           githubLink="https://github.com/pinkkila/dev-academy-spring-2025-exercise"
+        />
+
+        <Project
+          title="Room Reservation API"
+          description={
+            <>
+              <p className="text-foreground/88">
+                A Spring Boot REST API for managing room reservations, built
+                with Spring Data JDBC and PostgreSQL. The API supports creating,
+                listing and deleting reservations, with filtering by room,
+                pagination and sorting. It rejects reservations in the past,
+                reservations that end before they start, and overlapping
+                reservations for the same room.
+              </p>
+              <p className="text-foreground/88">
+                The project emphasizes comprehensive testing with JUnit and
+                Testcontainers, input validation, logging, and exception
+                handling that returns errors in the RFC 9457 Problem Details
+                format.
+              </p>
+              <p className="text-foreground/88">
+                Using AI tools and documenting how they were used was part of
+                the assignment. The project was developed with JetBrains Junie
+                and AI Assistant, and the README describes their use.
+              </p>
+            </>
+          }
+          stack={[
+            "Java",
+            "Spring Boot",
+            "Spring Data JDBC",
+            "REST API",
+            "RFC 9457",
+            "PostgreSQL",
+            "Testing",
+            "JUnit",
+            "Testcontainers",
+            "Docker",
+          ]}
+          carouselImages={[
+            { src: roomReservationApi, alt: "Room Reservation API image" },
+          ]}
+          githubLink="https://github.com/pinkkila/room-reservation-api"
         />
 
         <Project
@@ -418,7 +462,7 @@ export default function Projects() {
           carouselImages={[
             { src: reactNative, alt: "Vocabulary Practice App image" },
           ]}
-          githubLink="https://github.com/pinkkila/tunkeutumistestaus"
+          githubLink="https://github.com/pinkkila/words"
         />
       </AnimatedGroup>
     </main>
